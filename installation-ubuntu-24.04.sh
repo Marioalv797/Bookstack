@@ -141,6 +141,11 @@ function run_update_bookstack_env() {
   php artisan key:generate --no-interaction --force
 }
 
+# Run the BookStack database migrations for the first time
+#function run_bookstack_database_migrations() {
+#  cd "$BOOKSTACK_DIR" || exit
+#  php artisan migrate --no-interaction --force
+#}
 
 # Set file and folder permissions
 # Sets current user as owner user and www-data as owner group then
